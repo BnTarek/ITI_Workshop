@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.musicplayer.MainActivity">
+
+    <Button
+        android:id="@+id/strtMsc"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:onClick="startMusic"
+        android:text="Start Music" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/strtBtn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="startService"
+            android:text="Start Service" />
+
+        <Button
+            android:id="@+id/stpBtn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="stopService"
+            android:text="Stop Service" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/strtBndBtn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="bindService"
+            android:text="Bind Service" />
+
+
+        <Button
+            android:id="@+id/unbndbtn"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:onClick="ubindService"
+            android:text="unbind Service" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/crntPstnBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:onClick="getCurrentPosition"
+        android:text="Get Current Position" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:hint="Test App Response"
+        android:inputType="text" />
+
+
+</LinearLayout>
